@@ -1,2 +1,2 @@
-{"time":"2024-07-12T14:14:01.763755071+05:00","level":"INFO","msg":"Starting the application..."}
-{"time":"2024-07-12T14:14:01.769566598+05:00","level":"INFO","msg":"server is running","PORT":":50052"}
+{"time":"2024-07-12T15:25:16.423131503+05:00","level":"INFO","msg":"Starting the application..."}
+{"time":"2024-07-12T15:25:16.423317748+05:00","level":"INFO","msg":"server is running","PORT":":50051"}

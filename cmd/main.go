@@ -32,11 +32,11 @@ func main() {
 		panic(err)
 	}
 	defer listener.Close()
-	
-	s := service.NewPaymentService(*postgres.NewPaymentRepo(db))
+
+	s := service.NewPaymentService(*postgres.NewPaymentRepo(db), logger)
 	server := grpc.NewServer()
 	pb.RegisterPaymentServiceServer(server, s)
-	
+
 	logger.Info("server is running", "PORT", config.URL_PORT)
 	log.Printf("server is running on %v...", listener.Addr())
 	if err := server.Serve(listener); err != nil {

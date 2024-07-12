@@ -28,7 +28,7 @@ func Load() Config {
 	config.DB_USER = cast.ToString(Coalasce("DB_USER", "postgres"))
 	config.DB_NAME = cast.ToString(Coalasce("DB_NAME", "payment_service"))
 	config.DB_PASSWORD = cast.ToString(Coalasce("DB_PASSWORD", "03212164"))
-	config.URL_PORT = cast.ToString(Coalasce("URL_PORT", "50051"))
+	config.URL_PORT = cast.ToString(Coalasce("URL_PORT", ":50051"))
 
 	return config
 }
